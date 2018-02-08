@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous">    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s10 offset-s1">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title"><h5>&#127829 Tip Calculator &#127828</h5></span>
+              <div class="row">
+                <form id="calc-form">
+                    <div class="errors"></div>
+                  <div class="input-field col s10">
+                    <input type="text" placeholder="$" id="total-amount">
+                    <label for="amount">Enter Bill Total</label>
+                  </div>
+                  <div class="input-field col s10">
+                    <input type="number" placeholder="%" id="percent">
+                    <label for="percent">Tip Precentage</label>
+                  </div>
+                  <div class="input-field col s10">
+                    <input type="number" value="1" id="divide-by">
+                    <label for="divide">Number of people</label>
+                  </div>
+                  <div class ="col s12">
+                  <input type="submit" id="calculate" value="Calculate" class="btn">
+                </div>
+                </form>
+                <div class="col s12">
+                  <div class="results">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
